@@ -1,0 +1,330 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+div.top-header {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header div.logo {
+    padding: 10px;
+    width: 50%;
+}
+
+header nav {
+    font-size: 12px;
+    display: none;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+header .form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    font-size: 9px
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 11%;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+    width: 100%
+}
+
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article div.main-article .price {
+    width: 30%;
+}
+
+article div.main-article .discount {
+    width: 70%;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+footer section{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer section i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3;
+}
+
+footer .copyrigth{
+    margin: 30px;
+}
+/*FORMULARIO*/
+
+.title{
+    font-size: 24px;
+    padding: 15px;
+}
+
+
+.formulario{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+
+.control-formulario{
+    margin-bottom: 15px;
+    }
+
+/*FORMULARIO LOGIN*/
+.title-login{
+    font-size: 24px;
+    padding: 15px;
+}
+
+.formulario-login{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.control-formulario-login{
+    margin-bottom: 15px;
+    }
+
+.control-formulario-login input{
+    width: 80%;
+}
+.btn-login{
+   width: 80%; 
+   background-color: #0044AA;
+}
+.btn-login a{
+    color: #ffffff;
+}
+
+.copyrigth{
+    margin: 30px;
+}
+
+
+/*NAVEGACION EN TABLET Y DESKTOP*/
+@media (min-width: 768px) {
+    header nav{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header nav ul{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .input{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 25px;
+    }
+    header .submit{
+        display: flex;
+        align-items: center;
+        height: 25px;
+    }
+
+    div.burger-menu{
+     display: none;   
+    }
+
+    main section div.products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section article .description {
+        display: block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+}
+
+@media (min-width: 1269px){
+    main section div.products {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    main section article .description {
+        display: block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 23%;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px;
+        
+    }
+    .copyrigth{
+        margin-top: 50px;
+    }
+    
+}
+
+
