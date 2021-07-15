@@ -3,7 +3,7 @@ const app = express();
 const path = require ('path');
 
 
-app.get('/home', (req, res)=>{
+app.get('/', (req, res)=>{
     //res.send('Ruta ppal');
     res.sendFile(path.join(__dirname, 'views/home.html'))
 });
