@@ -5,17 +5,17 @@ const path = require ('path');
 
 app.get('/home', (req, res)=>{
     //res.send('Ruta ppal');
-    res.sendFile(path.join(__dirname, '/views/home.html'))
+    res.sendFile(path.join(__dirname, 'views/home.html'))
 });
 
 app.get('/register', (req, res)=>{
     //res.send('Ruta ppal');
-    res.sendFile(path.join(__dirname, '/views/register.html'))
+    res.sendFile(path.join(__dirname, 'views/register.html'))
 });
 
 app.get('/login', (req, res)=>{
     //res.send('Ruta ppal');
-    res.sendFile(path.join(__dirname, '/views/login.html'))
+    res.sendFile(path.join(__dirname, 'views/login.html'))
 });
 
 //mencionar que public es la carpeta estatica de la aplicacion
