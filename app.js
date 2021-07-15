@@ -21,7 +21,7 @@ app.get('/login', (req, res)=>{
 //mencionar que public es la carpeta estatica de la aplicacion
 app.use(express.static('public'));
 
-app.listen(process.env.PORT || '3000', () =>{
+app.listen(process.env.PORT || 3000, () =>{
     console.log('Corriendo puerto 3000');
 })
 
